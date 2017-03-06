@@ -21,6 +21,14 @@
 		B306B4371E69518F00CCCE64 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306B4361E69518F00CCCE64 /* SignInInteractor.swift */; };
 		B306B4391E6951A500CCCE64 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306B4381E6951A500CCCE64 /* SignInView.swift */; };
 		B306B43B1E69544000CCCE64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306B43A1E69544000CCCE64 /* User.swift */; };
+		B34561C71E6D3CB500136174 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34561C61E6D3CB500136174 /* SignUpViewController.swift */; };
+		B34561C91E6D3FF200136174 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B34561C81E6D3FF200136174 /* SignUpViewController.xib */; };
+		B34561CB1E6D40FF00136174 /* SignUpWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34561CA1E6D40FF00136174 /* SignUpWireframe.swift */; };
+		B34561CD1E6D410800136174 /* SignUpInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34561CC1E6D410800136174 /* SignUpInteractorIO.swift */; };
+		B34561CF1E6D411000136174 /* SignUpModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34561CE1E6D411000136174 /* SignUpModuleInterface.swift */; };
+		B34561D11E6D411600136174 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34561D01E6D411600136174 /* SignUpPresenter.swift */; };
+		B34561D31E6D411F00136174 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34561D21E6D411F00136174 /* SignUpView.swift */; };
+		B34561D51E6D419000136174 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34561D41E6D419000136174 /* SignUpInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,14 @@
 		B306B4361E69518F00CCCE64 /* SignInInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
 		B306B4381E6951A500CCCE64 /* SignInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		B306B43A1E69544000CCCE64 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B34561C61E6D3CB500136174 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B34561C81E6D3FF200136174 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		B34561CA1E6D40FF00136174 /* SignUpWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpWireframe.swift; sourceTree = "<group>"; };
+		B34561CC1E6D410800136174 /* SignUpInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInteractorIO.swift; sourceTree = "<group>"; };
+		B34561CE1E6D411000136174 /* SignUpModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModuleInterface.swift; sourceTree = "<group>"; };
+		B34561D01E6D411600136174 /* SignUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		B34561D21E6D411F00136174 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		B34561D41E6D419000136174 /* SignUpInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,12 +131,20 @@
 				B306B3FE1E69504D00CCCE64 /* AppDelegate.swift */,
 				B306B42E1E69516200CCCE64 /* SignInWireframe.swift */,
 				B306B4301E69517000CCCE64 /* SignInInteractorIO.swift */,
+				B306B4361E69518F00CCCE64 /* SignInInteractor.swift */,
 				B306B4321E69517B00CCCE64 /* SignInModuleInterface.swift */,
 				B306B4341E69518500CCCE64 /* SignInPresenter.swift */,
-				B306B4361E69518F00CCCE64 /* SignInInteractor.swift */,
 				B306B4381E6951A500CCCE64 /* SignInView.swift */,
 				B306B4001E69504D00CCCE64 /* SignInViewController.swift */,
 				B306B42C1E6950DE00CCCE64 /* SignInViewController.xib */,
+				B34561CA1E6D40FF00136174 /* SignUpWireframe.swift */,
+				B34561CC1E6D410800136174 /* SignUpInteractorIO.swift */,
+				B34561D41E6D419000136174 /* SignUpInteractor.swift */,
+				B34561CE1E6D411000136174 /* SignUpModuleInterface.swift */,
+				B34561D01E6D411600136174 /* SignUpPresenter.swift */,
+				B34561D21E6D411F00136174 /* SignUpView.swift */,
+				B34561C61E6D3CB500136174 /* SignUpViewController.swift */,
+				B34561C81E6D3FF200136174 /* SignUpViewController.xib */,
 				B306B4051E69504D00CCCE64 /* Assets.xcassets */,
 				B306B4071E69504D00CCCE64 /* LaunchScreen.storyboard */,
 				B306B40A1E69504D00CCCE64 /* Info.plist */,
@@ -258,6 +282,7 @@
 			files = (
 				B306B4091E69504D00CCCE64 /* LaunchScreen.storyboard in Resources */,
 				B306B42D1E6950DE00CCCE64 /* SignInViewController.xib in Resources */,
+				B34561C91E6D3FF200136174 /* SignUpViewController.xib in Resources */,
 				B306B4061E69504D00CCCE64 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34561CD1E6D410800136174 /* SignUpInteractorIO.swift in Sources */,
+				B34561D31E6D411F00136174 /* SignUpView.swift in Sources */,
+				B34561D51E6D419000136174 /* SignUpInteractor.swift in Sources */,
+				B34561C71E6D3CB500136174 /* SignUpViewController.swift in Sources */,
 				B306B4351E69518500CCCE64 /* SignInPresenter.swift in Sources */,
+				B34561CB1E6D40FF00136174 /* SignUpWireframe.swift in Sources */,
+				B34561D11E6D411600136174 /* SignUpPresenter.swift in Sources */,
+				B34561CF1E6D411000136174 /* SignUpModuleInterface.swift in Sources */,
 				B306B4011E69504D00CCCE64 /* SignInViewController.swift in Sources */,
 				B306B42F1E69516200CCCE64 /* SignInWireframe.swift in Sources */,
 				B306B4331E69517B00CCCE64 /* SignInModuleInterface.swift in Sources */,
@@ -532,6 +564,7 @@
 				B306B4251E69504D00CCCE64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B306B4261E69504D00CCCE64 /* Build configuration list for PBXNativeTarget "TestViperTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +573,7 @@
 				B306B4281E69504D00CCCE64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B306B4291E69504D00CCCE64 /* Build configuration list for PBXNativeTarget "TestViperUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +582,7 @@
 				B306B42B1E69504D00CCCE64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

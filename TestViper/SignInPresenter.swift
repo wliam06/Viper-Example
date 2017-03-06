@@ -25,8 +25,8 @@ class SignInPresenter: SignInModuleInterface, SignInInteractorOutput {
     
     //MARK: - Output
     func foundUser(user: User?) {
-        if let usr = user {
-            view.showUserInfo(user: usr)
+        if let _ = user {
+            wireframe.pushToSignUpView()
         } else {
             view.showLabel(withText: "User not found.")
         }

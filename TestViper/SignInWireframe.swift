@@ -11,6 +11,8 @@ import Foundation
 class SignInWireframe {
     let signInVC: SignInViewController
     
+    var signUpWireframe: SignUpWireframe?
+    
     init() {
         signInVC = SignInViewController()
         
@@ -20,5 +22,10 @@ class SignInWireframe {
         presenter.interactor = interactor
         
         signInVC.presenter = presenter
+    }
+    
+    func pushToSignUpView() {
+        signUpWireframe = SignUpWireframe()
+        signUpWireframe?.pushToSignUpViewController(withNavController: signInVC.navigationController!)
     }
 }
