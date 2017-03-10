@@ -11,28 +11,40 @@ import UIKit
 class SignInViewController: UIViewController, SignInView {
     var presenter: SignInModuleInterface?
     
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var identifierLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
-    //MARK: - SignInView
-    func showLabel(withText text: String) {
-        label.text = text
+    
+    // MARK: - Error Message
+    func showError(message: String) {
+      let alert = UIAlertView(title: "Error", message: message, delegate: nil, cancelButtonTitle: "Ok")
+      alert.show()
     }
     
-    func showUserInfo(user: User) {
-        nameLabel.text = user.name
-        label.text = user.email
+    //MARK: - Show Identifier 
+    func showIdentifier(text: String) {
+        identifierLabel.text = text
     }
     
     //MARK: - Button Actions
-    @IBAction func buttonLoginOnClick() {
-        presenter?.buttonLoginDidClicked(email: "lalala", password: "lalala")
+    @IBAction func signInButton(_ sender: Any) {
+        presenter?.signInButton(username: usernameTextField.text!, password: passwordTextField.text!)
     }
+    
+    @IBAction func signUpButton(_ sender: Any) {
+        //show to signUpView
+        presenter?.signUpButton()
+    }
+    
+    
+    
 }
 

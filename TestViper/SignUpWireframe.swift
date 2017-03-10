@@ -8,8 +8,8 @@
 
 import UIKit
 
-class SignUpWireframe {
-    fileprivate let signUpVC: SignUpViewController
+class SignUpWireframe{
+    let signUpVC: SignUpViewController
     
     init() {
         signUpVC = SignUpViewController()
@@ -20,9 +20,15 @@ class SignUpWireframe {
         presenter.interactor = interactor
         
         signUpVC.presenter = presenter
-    }
     
+    }
+
     func pushToSignUpViewController(withNavController navVC: UINavigationController) {
         navVC.pushViewController(signUpVC, animated: true)
     }
+    
+    func popSignUpView(user: User) {
+        _ = signUpVC.navigationController?.popViewController(animated: true)
+    }
+    
 }

@@ -8,4 +8,5 @@
 
 protocol SignUpView: class {
     func showError(message: String)
+    func foundUser(user: User)
 }

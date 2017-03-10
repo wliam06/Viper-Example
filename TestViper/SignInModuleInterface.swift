@@ -7,5 +7,6 @@
 //
 
 protocol SignInModuleInterface {
-    func buttonLoginDidClicked(email: String, password: String)
+    func signInButton (username: String, password: String)
+    func signUpButton ()
 }
