@@ -16,7 +16,6 @@ class SignUpViewController: UIViewController, SignUpView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     
     }
@@ -27,12 +26,14 @@ class SignUpViewController: UIViewController, SignUpView {
         alert.show()
     }
     
+    
+    func foundUser(user: User) {
+        usernameTextField.text = user.name
+        passwordTextField.text = user.password
+    }
+    
     //MARK: - Button Actions
     @IBAction func onSignUpButtonClick() {
-        if usernameTextField.text == passwordTextField.text {
-            showError(message: "Same username and password")
-        }
-        
-//        presenter?.signUpButtonDidClicked(username: usernameTextField.text, password: passwordTextField.text)
+        presenter?.signUpButtonDidClicked(username: usernameTextField.text, password: passwordTextField.text)
     }
 }

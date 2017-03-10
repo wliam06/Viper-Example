@@ -6,7 +6,8 @@
 //  Copyright © 2017 PT. Kurio. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
 
 class SignInWireframe {
     let signInVC: SignInViewController

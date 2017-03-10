@@ -7,9 +7,11 @@
 //
 
 protocol SignInInteractorInput: class {
-    func signIn(withEmail email: String, password: String)
+    func signIn(username: String, password: String)
 }
 
 protocol SignInInteractorOutput: class {
-    func foundUser(user: User?)
+    func foundUser (user: User)
+    func foundError (message: String)
+    func showIdentifier (text: String)
 }

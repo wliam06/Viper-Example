@@ -6,8 +6,8 @@
 //  Copyright © 2017 PT. Kurio. All rights reserved.
 //
 
-protocol SignInView: class {
-    func showLabel(withText text: String)
+protocol SignInView: class {    
+    func showError(message: String)
     
-    func showUserInfo(user: User)
+    func showIdentifier (text: String)
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DE765091E71538D00B2B335 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE765081E71538D00B2B335 /* Test.swift */; };
 		B306B3FF1E69504D00CCCE64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306B3FE1E69504D00CCCE64 /* AppDelegate.swift */; };
 		B306B4011E69504D00CCCE64 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B306B4001E69504D00CCCE64 /* SignInViewController.swift */; };
 		B306B4061E69504D00CCCE64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B306B4051E69504D00CCCE64 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3DE765081E71538D00B2B335 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		B306B3FB1E69504D00CCCE64 /* TestViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B306B3FE1E69504D00CCCE64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B306B4001E69504D00CCCE64 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D65EB131E70FDB200D3D028 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B306B43A1E69544000CCCE64 /* User.swift */,
+				3DE765081E71538D00B2B335 /* Test.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3D65EB141E70FDCC00D3D028 /* SignInVC */ = {
+			isa = PBXGroup;
+			children = (
+				B306B42E1E69516200CCCE64 /* SignInWireframe.swift */,
+				B306B4301E69517000CCCE64 /* SignInInteractorIO.swift */,
+				B306B4361E69518F00CCCE64 /* SignInInteractor.swift */,
+				B306B4321E69517B00CCCE64 /* SignInModuleInterface.swift */,
+				B306B4341E69518500CCCE64 /* SignInPresenter.swift */,
+				B306B4381E6951A500CCCE64 /* SignInView.swift */,
+				B306B4001E69504D00CCCE64 /* SignInViewController.swift */,
+				B306B42C1E6950DE00CCCE64 /* SignInViewController.xib */,
+			);
+			name = SignInVC;
+			sourceTree = "<group>";
+		};
+		3D65EB151E70FDD800D3D028 /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				B34561CA1E6D40FF00136174 /* SignUpWireframe.swift */,
+				B34561CC1E6D410800136174 /* SignUpInteractorIO.swift */,
+				B34561D41E6D419000136174 /* SignUpInteractor.swift */,
+				B34561CE1E6D411000136174 /* SignUpModuleInterface.swift */,
+				B34561D01E6D411600136174 /* SignUpPresenter.swift */,
+				B34561D21E6D411F00136174 /* SignUpView.swift */,
+				B34561C61E6D3CB500136174 /* SignUpViewController.swift */,
+				B34561C81E6D3FF200136174 /* SignUpViewController.xib */,
+			);
+			name = SignUpVC;
+			sourceTree = "<group>";
+		};
+		3D65EB161E70FE0500D3D028 /* Supported Files */ = {
+			isa = PBXGroup;
+			children = (
+				B306B4051E69504D00CCCE64 /* Assets.xcassets */,
+				B306B3FE1E69504D00CCCE64 /* AppDelegate.swift */,
+				B306B4071E69504D00CCCE64 /* LaunchScreen.storyboard */,
+				B306B40A1E69504D00CCCE64 /* Info.plist */,
+			);
+			name = "Supported Files";
+			sourceTree = "<group>";
+		};
 		B306B3F21E69504D00CCCE64 = {
 			isa = PBXGroup;
 			children = (
@@ -127,27 +179,10 @@
 		B306B3FD1E69504D00CCCE64 /* TestViper */ = {
 			isa = PBXGroup;
 			children = (
-				B306B43A1E69544000CCCE64 /* User.swift */,
-				B306B3FE1E69504D00CCCE64 /* AppDelegate.swift */,
-				B306B42E1E69516200CCCE64 /* SignInWireframe.swift */,
-				B306B4301E69517000CCCE64 /* SignInInteractorIO.swift */,
-				B306B4361E69518F00CCCE64 /* SignInInteractor.swift */,
-				B306B4321E69517B00CCCE64 /* SignInModuleInterface.swift */,
-				B306B4341E69518500CCCE64 /* SignInPresenter.swift */,
-				B306B4381E6951A500CCCE64 /* SignInView.swift */,
-				B306B4001E69504D00CCCE64 /* SignInViewController.swift */,
-				B306B42C1E6950DE00CCCE64 /* SignInViewController.xib */,
-				B34561CA1E6D40FF00136174 /* SignUpWireframe.swift */,
-				B34561CC1E6D410800136174 /* SignUpInteractorIO.swift */,
-				B34561D41E6D419000136174 /* SignUpInteractor.swift */,
-				B34561CE1E6D411000136174 /* SignUpModuleInterface.swift */,
-				B34561D01E6D411600136174 /* SignUpPresenter.swift */,
-				B34561D21E6D411F00136174 /* SignUpView.swift */,
-				B34561C61E6D3CB500136174 /* SignUpViewController.swift */,
-				B34561C81E6D3FF200136174 /* SignUpViewController.xib */,
-				B306B4051E69504D00CCCE64 /* Assets.xcassets */,
-				B306B4071E69504D00CCCE64 /* LaunchScreen.storyboard */,
-				B306B40A1E69504D00CCCE64 /* Info.plist */,
+				3D65EB131E70FDB200D3D028 /* Model */,
+				3D65EB141E70FDCC00D3D028 /* SignInVC */,
+				3D65EB151E70FDD800D3D028 /* SignUpVC */,
+				3D65EB161E70FE0500D3D028 /* Supported Files */,
 			);
 			path = TestViper;
 			sourceTree = "<group>";
@@ -312,6 +347,7 @@
 				B34561D31E6D411F00136174 /* SignUpView.swift in Sources */,
 				B34561D51E6D419000136174 /* SignUpInteractor.swift in Sources */,
 				B34561C71E6D3CB500136174 /* SignUpViewController.swift in Sources */,
+				3DE765091E71538D00B2B335 /* Test.swift in Sources */,
 				B306B4351E69518500CCCE64 /* SignInPresenter.swift in Sources */,
 				B34561CB1E6D40FF00136174 /* SignUpWireframe.swift in Sources */,
 				B34561D11E6D411600136174 /* SignUpPresenter.swift in Sources */,

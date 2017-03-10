@@ -7,13 +7,6 @@
 //
 
 struct User {
-    var email = ""
     var name = ""
     var password = ""
-    
-    init(email: String, name: String, password: String) {
-        self.email = email
-        self.name = name
-        self.password = password
-    }
 }

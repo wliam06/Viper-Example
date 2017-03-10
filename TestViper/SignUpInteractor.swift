@@ -16,12 +16,22 @@ class SignUpInteractor: SignUpInteractorInput {
         self.output = output
     }
     
+    var user: [User]?
+    
     //MARK: - Input
     func signUp(withUsername username: String?, password: String?) {
         // Make sure username is not the same with password
-        if username == password {
+        
+        if (username?.isEmpty)!{
+            output.foundError(withMessage: "Username must be filled")
+        }else if (password?.isEmpty)!{
+            output.foundError(withMessage: "Password must be filled")
+        }else if username == password {
             // Output show alert message same username and password
             output.foundError(withMessage: "Same username and password")
+        }else {
+            let user = User(name: username!, password: password!)
+            self.output.foundUser(user: user)
         }
     }
 }
