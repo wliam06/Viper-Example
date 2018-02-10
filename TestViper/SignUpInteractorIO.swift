@@ -13,5 +13,5 @@ protocol SignUpInteractorInput: class {
 
 protocol SignUpInteractorOutput: class {
     func foundError(withMessage message: String)
-    func foundUser(user: User?)
+    func successSignUpUser()
 }

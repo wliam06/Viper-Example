@@ -14,11 +14,6 @@ class SignInInteractor: SignInInteractorInput {
     
     init(output: SignInInteractorOutput) {
         self.output = output
-        
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(self.assignSignUpUser(notification:)),
-                                               name: NSNotification.Name("didSignUp"),
-                                               object: nil)
     }
     
     var signedUpUser: User?
@@ -34,23 +29,26 @@ class SignInInteractor: SignInInteractorInput {
         }
         else {
             
-            guard let user = signedUpUser else { return }
-            
-            if user.name != username {
-                self.output.foundError(message: "Username is not registered")
-            }else if user.password != password {
-                self.output.foundError(message: "Password is not match")
-            }else if user.name == username && user.password == password {
-                self.output.showIdentifier(text: "Success")
-                self.output.foundUser(user: user)
+            let helper = DBHelper()
+            if let userInDB = helper.fetchUser(username: username, password: password) {
+                debugPrint("USER FOUND")
+                output.showIdentifier(text: "Success")
+                output.successSignInUser()
+            } else {
+                debugPrint("USER NOT FOUND")
+                output.showIdentifier(text: "Failed")
             }
+            
+            
+            
+//            if user.name != username {
+//                self.output.foundError(message: "Username is not registered")
+//            }else if user.password != password {
+//                self.output.foundError(message: "Password is not match")
+//            }else if user.name == username && user.password == password {
+//                self.output.showIdentifier(text: "Success")
+//                self.output.foundUser(user: user)
+//            }
         }
     }
-
-    @objc func assignSignUpUser(notification: Notification) {
-        if let user = notification.object as? User {
-            self.signedUpUser = user
-        }
-    }
-    
 }

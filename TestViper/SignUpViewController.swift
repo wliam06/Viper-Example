@@ -28,8 +28,8 @@ class SignUpViewController: UIViewController, SignUpView {
     
     
     func foundUser(user: User) {
-        usernameTextField.text = user.name
-        passwordTextField.text = user.password
+//        usernameTextField.text = user.name
+//        passwordTextField.text = user.password
     }
     
     //MARK: - Button Actions

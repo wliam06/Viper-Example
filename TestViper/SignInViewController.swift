@@ -11,12 +11,10 @@ import UIKit
 class SignInViewController: UIViewController, SignInView {
     var presenter: SignInModuleInterface?
     
-    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var identifierLabel: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -30,8 +30,10 @@ class SignUpInteractor: SignUpInteractorInput {
             // Output show alert message same username and password
             output.foundError(withMessage: "Same username and password")
         }else {
-            let user = User(name: username!, password: password!)
-            self.output.foundUser(user: user)
+            let helper = DBHelper()
+            helper.insertUser(username: username!, password: password!)
+            
+            self.output.successSignUpUser()
         }
     }
 }

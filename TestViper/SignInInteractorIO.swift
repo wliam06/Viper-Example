@@ -14,4 +14,5 @@ protocol SignInInteractorOutput: class {
     func foundUser (user: User)
     func foundError (message: String)
     func showIdentifier (text: String)
+    func successSignInUser()
 }

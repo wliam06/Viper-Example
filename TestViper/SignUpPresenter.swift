@@ -14,9 +14,7 @@ class SignUpPresenter: SignUpModuleInterface, SignUpInteractorOutput {
     unowned let view: SignUpView
     
     var interactor: SignUpInteractorInput?
-    
-    var user: [User]?
-    
+        
     init(wireframe: SignUpWireframe, view: SignUpView) {
         self.wireframe = wireframe
         self.view = view
@@ -33,16 +31,9 @@ class SignUpPresenter: SignUpModuleInterface, SignUpInteractorOutput {
         view.showError(message: message)
     }
     
-    func foundUser(user: User?) {
+    func successSignUpUser() {
         //push data to SignInView
         
-        if let usr = user {
-            
-            NotificationCenter.default.post(name: NSNotification.Name("didSignUp"), object: usr)
-            
-            wireframe.popSignUpView(user: usr)
-        }else {
-            
-        }
+        wireframe.popSignUpView()
     }
 }

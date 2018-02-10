@@ -13,6 +13,7 @@ class SignInWireframe {
     let signInVC: SignInViewController
     
     var signUpWireframe: SignUpWireframe?
+    var welcomeWireframe: WelcomeWireframe?
     
     init() {
         signInVC = SignInViewController()
@@ -28,5 +29,10 @@ class SignInWireframe {
     func pushToSignUpView() {
         signUpWireframe = SignUpWireframe()
         signUpWireframe?.pushToSignUpViewController(withNavController: signInVC.navigationController!)
+    }
+    
+    func pushToWelcomeView() {
+        welcomeWireframe = WelcomeWireframe()
+        welcomeWireframe?.pushToWelcomeViewController(withNavController: signInVC.navigationController!)
     }
 }

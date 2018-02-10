@@ -27,7 +27,7 @@ class SignUpWireframe{
         navVC.pushViewController(signUpVC, animated: true)
     }
     
-    func popSignUpView(user: User) {
+    func popSignUpView() {
         _ = signUpVC.navigationController?.popViewController(animated: true)
     }
     

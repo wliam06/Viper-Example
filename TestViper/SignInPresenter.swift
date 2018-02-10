@@ -30,6 +30,10 @@ class SignInPresenter: SignInModuleInterface, SignInInteractorOutput {
         wireframe.pushToSignUpView()
     }
     
+    func successSignInUser() {
+        wireframe.pushToWelcomeView()
+    }
+    
     //MARK: - Output
     func foundUser (user: User) {
         debugPrint("USER SIGN IN SUCCESS")

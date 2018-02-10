@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MagicalRecord
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
+    
+        MagicalRecord.setupCoreDataStack(withStoreNamed: "ViperTest.sqlite")
+        
+        print("Document : %@", NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString)
         
         return true
     }
